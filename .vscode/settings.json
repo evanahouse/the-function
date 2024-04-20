@@ -1,4 +1,6 @@
 {
-        "editor.formatOnSave": true
-
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "git.confirmEmptyCommits": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.formatOnSave": true
 }

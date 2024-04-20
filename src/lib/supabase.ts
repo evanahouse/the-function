@@ -1,7 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
-import * as SecureStore from 'expo-secure-store';
-import 'react-native-url-polyfill/auto';
-import { Database } from '../database.types';
+import { createClient } from "@supabase/supabase-js";
+import * as SecureStore from "expo-secure-store";
+import "react-native-url-polyfill/auto";
+import { Database } from "../database.types";
 
 const ExpoSecureStoreAdapter = {
   getItem: (key: string) => {
@@ -15,10 +15,9 @@ const ExpoSecureStoreAdapter = {
   },
 };
 
-const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON || '';
-
-console.log(supabaseUrl, supabaseAnonKey);
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL_THE_FUNCTION || "";
+const supabaseAnonKey =
+  process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY_THE_FUNCTION || "";
 
 export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
   auth: {
