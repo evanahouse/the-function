@@ -1,0 +1,52 @@
+{
+  "build": {
+    "qa-debug": {
+      "developmentClient": true,
+      "android": { "buildType": "apk" },
+      "channel": "qa-debug"
+    },
+    "qa-release": {
+      "android": { "buildType": "apk" },
+      "channel": "qa-release"
+    },
+    "prod-debug": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "prod-debug",
+      "env": { "BUILD_VARIANT": "production" }
+    },
+    "prod-testing": {
+      "android": { "buildType": "apk" },
+      "channel": "prod-release",
+      "env": { "BUILD_VARIANT": "production" }
+    },
+    "prod-release": {
+      "channel": "prod-release",
+      "env": { "BUILD_VARIANT": "production" }
+    }
+  },
+  "submit": {
+    "qa-release": {
+      "android": {
+        "serviceAccountKeyPath": "../path/to/api-xxx-yyy-zzz.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "ehouse94@@vt.edu",
+        "appleTeamId": ""
+        // "ascAppId": ""
+      }
+    },
+    "prod-release": {
+      "android": {
+        "serviceAccountKeyPath": "../path/to/api-xxx-yyy-zzz.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "ehouse94@vt.edu",
+        "appleTeamId": ""
+        // "ascAppId": ""
+      }
+    }
+  }
+}

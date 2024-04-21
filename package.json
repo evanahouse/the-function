@@ -2,6 +2,14 @@
   "name": "the-function",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "config": {
+    "QA_FIREBASE_ID": "1:74904775547:android:30a14813fb4e2542dd2bde",
+    "PROD_FIREBASE_ID": "1:983310498171:android:fa68c73c7609ba162865de",
+    "EAS_APP_NAME": "the-function",
+    "DISPLAY_NAME": "the function",
+    "QA_EAS_PROJECT_ID": "04ea4796-1b96-48e3-b346-c2c6990dcbbe",
+    "PROD_EAS_PROJECT_ID": "1e1a0b3f-29f1-46a8-b148-07ae260b6d36"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,12 +22,14 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.3",
     "@expo/vector-icons": "^14.0.0",
     "@react-native-async-storage/async-storage": "1.21.0",
     "@react-navigation/native": "^6.0.2",
     "@shopify/restyle": "^2.4.2",
     "@supabase/supabase-js": "^2.42.5",
     "expo": "~50.0.14",
+    "expo-dev-client": "~3.3.11",
     "expo-font": "~11.10.3",
     "expo-linking": "~6.2.2",
     "expo-router": "~3.4.8",

@@ -23,6 +23,8 @@
       "@functions/*": ["src/functions/*"],
       "@hooks": ["src/hooks"],
       "@hooks/*": ["src/hooks/*"],
+      "@lib": ["src/lib"],
+      "@lib/*": ["src/lib/*"],
       "@modals": ["src/modals"],
       "@modals/*": ["src/modals/*"],
       "@screens": ["src/screens"],
