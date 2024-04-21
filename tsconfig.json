@@ -2,17 +2,37 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-        "baseUrl": ".",
-      "paths": {
+    "baseUrl": ".",
+    "paths": {
       "@/*": ["src/*"],
+      "@api": ["src/app"],
+      "@api/*": ["src/app/*"],
+      "@app": ["src/app"],
+      "@app/*": ["src/app/*"],
+      "@assets": ["src/assets"],
+      "@assets/*": ["src/assets/*"],
+      "@components": ["src/components"],
       "@components/*": ["src/components/*"],
-      "@assets/*": ["assets/*"]
+      "@constants": ["src/constants"],
+      "@constants/*": ["src/constants/*"],
+      "@custom": ["src/custom"],
+      "@custom/*": ["src/custom/*"],
+      "@features": ["src/features"],
+      "@features/*": ["src/features/*"],
+      "@functions": ["src/functions"],
+      "@functions/*": ["src/functions/*"],
+      "@hooks": ["src/hooks"],
+      "@hooks/*": ["src/hooks/*"],
+      "@modals": ["src/modals"],
+      "@modals/*": ["src/modals/*"],
+      "@screens": ["src/screens"],
+      "@screens/*": ["src/screens/*"],
+      "@startup": ["src/startup"],
+      "@startup/*": ["src/startup/*"],
+      "@zustand": ["src/zustand"],
+      "@zustand/*": ["src/zustand/*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }
