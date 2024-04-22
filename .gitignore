@@ -36,6 +36,11 @@ ios/
 *.apk
 *.aab
 
+google-services.json
+GoogleService-Info.plist
+production-google-services.json
+Production-GoogleService-Info.plist
+
 appprogress.md
 apphandling.md
 
