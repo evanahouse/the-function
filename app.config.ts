@@ -47,14 +47,18 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     name: NAME,
     slug: SLUG,
     owner: ORGANIZATION_NAME,
-
     scheme: SCHEME,
+    assetBundlePatterns: ["**/*"],
+    extra: {
+      eas: {
+        projectId: EAS_PROJECT_ID,
+      },
+    },
     splash: {
       image: "./assets/images/splash.png",
       resizeMode: "contain",
       backgroundColor: "#ffffff",
     },
-    assetBundlePatterns: ["**/*"],
     updates: {
       enabled: true,
       url: EXPO_UPDATES_URL,
