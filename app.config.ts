@@ -42,7 +42,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     ...config,
     version: APP_VERSION,
     orientation: "portrait",
-    icon: "./assets/images/icon.png",
+    icon: "./src/assets/images/icon.png",
     userInterfaceStyle: "light",
     name: NAME,
     slug: SLUG,
@@ -55,7 +55,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       },
     },
     splash: {
-      image: "./assets/images/splash.png",
+      image: "./src/assets/images/splash.png",
       resizeMode: "contain",
       backgroundColor: "#ffffff",
     },
@@ -77,14 +77,14 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       package: BUNDLE_ID,
       googleServicesFile: ANDROID_GOOGLE_SERVICE_FILE,
       adaptiveIcon: {
-        foregroundImage: "./assets/images/adaptive-icon.png",
+        foregroundImage: "./src/assets/images/adaptive-icon.png",
         backgroundColor: "#ffffff",
       },
     },
     web: {
       bundler: "metro",
       output: "static",
-      favicon: "./assets/images/favicon.png",
+      favicon: "./src/assets/images/favicon.png",
     },
     plugins: [
       "expo-router",
