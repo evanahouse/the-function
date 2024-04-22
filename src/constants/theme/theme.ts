@@ -28,3 +28,6 @@ const BASE_THEME = {
 };
 
 const theme = createTheme(BASE_THEME);
+
+export type Theme = typeof theme;
+export default theme;
